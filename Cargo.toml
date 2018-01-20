@@ -1,0 +1,9 @@
+[package]
+name = "playground-configure"
+version = "0.1.0"
+authors = ["Yoshua Wuyts <yoshuawuyts@gmail.com>"]
+
+[dependencies]
+configure = "0.1.1"
+serde = "1.0.27"
+serde_derive = "1.0.27"
