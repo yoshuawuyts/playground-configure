@@ -10,13 +10,15 @@ use std::path::PathBuf;
 #[derive(Deserialize, Configure)]
 #[serde(default)]
 pub struct Config {
-  addr: SocketAddr,
+  pub addr: SocketAddr,
+  pub debug: bool,
   tls_cert: Option<PathBuf>,
 }
 
 impl Default for Config {
   fn default() -> Config {
     Config {
+      debug: false,
       addr: "127.0.0.1:7878".parse().unwrap(),
       tls_cert: None,
     }
